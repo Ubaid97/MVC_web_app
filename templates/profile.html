@@ -1,0 +1,51 @@
+{% block head %}
+  <title>Profile</title>
+{% endblock %}
+{% block body %}
+<h1/> Profile page </h1>
+
+<div class="container">
+    <div class="span3 well">
+        <center>
+        <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img src="/images/profile pic" name="aboutme" width="140" height="140" class="img-circle"></a>
+        <h3>Ubaid-ur-rehman Muhammad</h3>
+        <em>click my face for more</em>
+		</center>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <h4 class="modal-title" id="myModalLabel">More About Ubaid</h4>
+                    </div>
+                <div class="modal-body">
+                    <center>
+                    <img src="/images/profile pic" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading">Ubaid-ur-rehman Muhammad <small>UK</small></h3>
+                    <span><strong>Skills: </strong></span>
+                        <span class="label label-warning">HTML/CSS/Bootstrap</span>
+                        <span class="label label-info">Flask</span>
+                        <span class="label label-info">Python</span>
+                        <span class="label label-success">SQL</span>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left"><strong>Bio: </strong><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">I've heard enough about Ubaid</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
